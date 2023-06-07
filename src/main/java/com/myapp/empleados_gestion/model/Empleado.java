@@ -9,7 +9,7 @@ import java.util.List;
 public class Empleado {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Integer id;
 
     private String nombre;
     private String apellido;
@@ -40,8 +40,9 @@ public class Empleado {
     public Empleado() {
     }
 
-    public Empleado(String nombre, String apellido, Date fechaNacimiento, String direccion, String telefono,
+    public Empleado(Integer id, String nombre, String apellido, Date fechaNacimiento, String direccion, String telefono,
                     String correoElectronico, String numeroIdentificacion, Date fechaContratacion, double salario) {
+        this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
         this.fechaNacimiento = fechaNacimiento;
@@ -53,11 +54,11 @@ public class Empleado {
         this.salario = salario;
     }
 
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 

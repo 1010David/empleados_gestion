@@ -8,7 +8,7 @@ import java.util.List;
 public class Departamento {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Integer id;
 
     private String nombre;
     private String descripcion;
@@ -26,18 +26,19 @@ public class Departamento {
     public Departamento() {
     }
 
-    public Departamento(String nombre, String descripcion, String ubicacion, Empleado jefeDepartamento) {
+    public Departamento(Integer id, String nombre, String descripcion, String ubicacion, Empleado jefeDepartamento) {
+        this.id = id;
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.ubicacion = ubicacion;
         this.jefeDepartamento = jefeDepartamento;
     }
 
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
