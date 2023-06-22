@@ -13,6 +13,10 @@ public class EmpleadosGestionApplication implements CommandLineRunner {
 	@Autowired
 	private BCryptPasswordEncoder passEncoder;
 
+	public EmpleadosGestionApplication(BCryptPasswordEncoder passEncoder) {
+		this.passEncoder = passEncoder;
+	}
+
 	public static void main(String[] args) {
 		SpringApplication.run(EmpleadosGestionApplication.class, args);
 

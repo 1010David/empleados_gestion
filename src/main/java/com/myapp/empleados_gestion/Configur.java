@@ -1,4 +1,4 @@
-package com.myapp.empleados_gestion.config;
+package com.myapp.empleados_gestion;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
