@@ -1,2 +1,4 @@
 # empleados_gestion
-Aplicacion Gestion de Empleados
+Employee Management Application Basic_CRUD
+SpringBoot 2.7.12
+Java 17
